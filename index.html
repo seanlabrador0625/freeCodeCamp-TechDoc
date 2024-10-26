@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header><h1 id="python">Python Documentation</h1></header>
+            <a class="nav-link" href="#introduction">Introduction</a>
+            <a class="nav-link" href="#python_basics">Python Basics</a>
+            <a class="nav-link" href="#python_data_types">Python Data Types</a>
+            <a class="nav-link" href="#python_control_structures">Python Control Structures</a>
+            <a class="nav-link" href="#python_functions">Python Functions</a>
+        </nav>
+        <div class="main-content">
+            <section class="main-section" id="introduction">
+                <header id="python_introduction"><h2>Introduction</h2></header>
+                <p>Python is a widely-used programming language known for its readability and simplicity. It was created by Guido van Rossum and first released in 1991.</p>
+                <p>Python emphasizes code readability with its clear syntax, which allows developers to express complex ideas in fewer lines of code.</p>
+                <p>Python is a high-level language, meaning that it abstracts much of the complexity involved in lower-level languages like C or C++.</p>
+                <p>One of Python’s biggest advantages is its large standard library, which provides many useful modules and functions for tasks like file I/O, data manipulation, and networking.</p>
+                <p>Python is platform-independent, meaning it can run on various operating systems such as Windows, Mac OS, and Linux.</p>
+                <pre><code># Python is easy to learn 
+                    print("Hello, World!")</code></pre>
+                <p>This introductory program outputs the text "Hello, World!" to the console. It demonstrates Python’s simplicity and ease of use.</p>
+                <p>Python is open-source, meaning anyone can contribute to its development or use it without licensing fees, which has greatly contributed to its popularity.</p>
+                <p>Python supports both imperative and object-oriented programming, making it a flexible choice for different types of projects.</p>
+            </section>
+            </section>
+
+            <section class="main-section" id="python_basics">
+                <header id="python_basics"><h2>Python Basics</h2></header>
+                <p>In Python, you can define variables without explicitly declaring their type. The type of the variable is inferred at runtime based on the value assigned to it.</p>
+                <p>For example, assigning `x = 10` makes `x` an integer, while assigning `x = "hello"` would change `x` to a string.</p>
+                <pre><code># Variables and arithmetic operations
+                    x = 10
+                    y = 5
+                    sum = x + y
+                    print(sum)  # Output: 15</code></pre>
+                <p>Python uses dynamic typing, meaning variables can change types dynamically as the program runs. This makes Python flexible but requires careful handling of data types.</p>
+                <p>Indentation is crucial in Python. Instead of using braces or keywords to define blocks of code, Python uses indentation levels to indicate the hierarchy of code blocks.</p>
+                <ul>
+                    <li>Variables: Used to store data values</li>
+                    <li>Data types: Specify the type of value stored in a variable</li>
+                    <li>Basic operators: Such as `+`, `-`, `*`, and `/` for arithmetic</li>
+                </ul>
+                <p>Python uses whitespace to organize code, making it essential to follow proper indentation rules. Incorrect indentation will result in errors.</p>
+                <p>Comments in Python begin with a `#` symbol and are ignored during execution. They are used to add explanations or notes to the code.</p>
+            </section>
+
+            <section class="main-section" id="python_data_types">
+                <header id="python_data_types"><h2>Python Data Types</h2></header>
+                <p>Python provides several built-in data types for handling different kinds of data. Each data type in Python is an object, meaning it has its own methods for interacting with the data.</p>
+                <pre><code># Example of different data types
+                    num = 42  # Integer
+                    pi = 3.14  # Float
+                    name = "Python"  # String
+                    isThisColorRed = True #Boolean - it can be either True or False </code></pre>
+                <p>Python’s common data types include:</p>
+                <ul>
+                    <li>Integers: Whole numbers, such as `42` or `-7`</li>
+                    <li>Floats: Decimal numbers, such as `3.14` or `-0.5`</li>
+                    <li>Strings: A sequence of characters enclosed in quotes, such as `"Python"`</li>
+                    <li>Lists: Ordered collections of items, such as `["apple", "banana", "cherry"]`</li>
+                    <li>Dictionaries: Unordered collections of key-value pairs, such as `{"name": "Alice", "age": 25}`</li>
+                </ul>
+                <p>Strings in Python can be manipulated using a wide range of methods, such as `.upper()`, `.lower()`, and `.replace()`.</p>
+                <p>Lists are mutable, meaning their contents can be changed after creation. You can add, remove, or modify items within a list.</p>
+                <p>Dictionaries allow for the storage of data as key-value pairs, making them ideal for scenarios where data needs to be easily accessed using a key.</p>
+            </section>
+
+            <section class="main-section" id="python_control_structures">
+                <header id="python_control_structures"><h2>Python Control Structures</h2></header>
+                <p>Control structures allow you to dictate the flow of a program by executing different blocks of code based on certain conditions or repeating actions multiple times.</p>
+                <p>The `if-else` statement is used for conditional execution. The code within the `if` block is executed only if the condition evaluates to `True`, <br>otherwise the code in the `else` block is executed.</p>
+                <pre><code># Conditional structure
+                    if num > 5:
+                        print("Greater than 5")
+                    else:
+                        print("5 or less")</code></pre>
+                <p>Loops allow you to repeat a block of code multiple times. The `for` loop in Python is used to iterate over a sequence of values (like a list or a range of numbers).</p>
+                <p>Python’s `while` loop executes a block of code as long as the condition remains `True`. Be careful to avoid infinite loops by ensuring <br>the condition will eventually become `False`.</p>
+                <p>Nested control structures are allowed, meaning you can place loops inside conditionals or vice versa, depending on the needs of your program.</p>
+            </section>
+
+            <section class="main-section" id="python_functions">
+                <header id="python_functions"><h2>Python Functions</h2></header>
+                <p>Functions are reusable blocks of code that can be called to perform specific tasks. In Python, functions are defined using the `def` keyword, followed by the function name and parameters.</p>
+                <p>Functions help you organize your code and avoid repetition. Once a function is defined, it can be called anywhere in the program by using its name followed by parentheses.</p>
+                <pre><code># Function definition and use
+                    def greet(name):
+                        return f"Hello, {name}!"
+
+                    message = greet("Alice")
+                    print(message)  # Output: Hello, Alice!</code></pre>
+                <p>Functions can return values using the `return` statement. If no `return` statement is used, the function will return `None` by default.</p>
+                <p>Functions can take multiple arguments, including optional arguments with default values. This allows for more flexible function calls.</p>
+                <p>Python also supports anonymous functions, known as lambda functions, which can be useful for short, simple tasks.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
